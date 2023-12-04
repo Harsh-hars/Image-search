@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;600&family=Kanit&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400&family=Roboto:wght@100&family=Rubik+Microbe&family=Skranji&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik Microbe', cursive;
+    font-family: 'Skranji', cursive;
+}
+
+body {
+  line-height: 1.6;
+}
+body h1{
+    text-align: center;
+    margin: 20px 0 20px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+   gap: 20px;
+}
+input {
+    height: 6vh;
+    width: 55vw;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 6px 0px 6px rgb(0 , 0, 0 ,0.2);
+    color: green;
+    border-radius: 15px;
+    border: none;
+}
+#search-button{
+    color:white;
+    background-color: green;
+    font-size: 15px;
+    padding: 7px;
+   border-radius: 20px;
+   border:none;
+}
+#container a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 25px;
+}
+#container .search-result{
+    width: 30vw;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+#container .search-result img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result img:hover{
+    opacity: 0.8;
+}
+#more-btn{
+    text-align: center;
+    padding: 7px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    border:none;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: block;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width:750px){
+    #container{
+        padding: 15px;
+    }
+    #container .search-result{
+        width:40vw
+    }
+}
+
+@media screen and (max-width:400px){
+    #container{
+        padding: 15px;
+    }
+    #container .search-result{
+        width:100vw
+    }
+}
